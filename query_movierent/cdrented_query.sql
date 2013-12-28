@@ -1,0 +1,1 @@
+select cd_id, cd_title from rented_cd

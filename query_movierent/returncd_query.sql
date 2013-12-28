@@ -1,0 +1,1 @@
+select cd_id,cd_status,returned_date,incharge from return_cd

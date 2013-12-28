@@ -1,0 +1,1 @@
+select cd_id,cd_title,returned_date from returned_cd

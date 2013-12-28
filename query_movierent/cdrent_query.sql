@@ -1,0 +1,1 @@
+select cd_id,custo_id,custo_name,address,contact_num,rent_date,incharge from cd_rent
