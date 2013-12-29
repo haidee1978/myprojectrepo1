@@ -1,0 +1,33 @@
+Python 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> import psycopg2
+
+def cd_rent():
+
+constr="" ""
+
+    dbname='heideedb'
+    user='heidee'
+    password='heidee123'
+    host='pythonista.learning.edu'
+    """
+
+conn = psycopg2.connect(constr)
+curr = conn.cursor()
+curr.execute("select * from cd_rent")
+rows = curr.fetchall()
+
+for row in rows:
+    print "=====Movie Summary===="
+    print "Movie Title:" + row[1]
+    print "Genre:" + row[2]
+    print "Release Year:" + str(row[3])
+    print "=====End Summary===="
+    print " "
+
+curr.execute("""
+             INSERT INTO MOVIES
+             (title, genre,release_year)
+             VALUES ('test','Testing', 2013)""")
+conn.commit()
+>>> 
