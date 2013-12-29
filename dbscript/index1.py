@@ -1,5 +1,5 @@
 import psycopg2
-   
+
 def index(req):
     header = """
 	<meta charset="utf-8">
@@ -25,7 +25,7 @@ def index(req):
       <script src="bootstrap/js/html5shiv.js"></script>
       <script src="bootstrap/js/respond.min.js"></script>
     <![endif]-->
-    
+
 	</head>
 	    """
     bodybegin = """
@@ -39,7 +39,7 @@ def index(req):
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">My Web</a>
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
@@ -58,8 +58,8 @@ def index(req):
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <h1>Welcome to Haid's Movie World</h1>
+        <p>Where your journey starts here...</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -68,18 +68,18 @@ def index(req):
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Science Fiction</h2>
+          <p>Star Trek Into Darkness,Elysium,Pacific Rim,Oblivion,After Earth,Man of Steel, World War Z Riddick,Iron Man 3,Ender's Game,Gravity,The World's End, The Wolverine,Europa Report,The Host,The Purge,The Hunger Games: Catchin...,Thor the Dark World,About Time,G>I Joe:Retaliation</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Comedy</h2>
+          <p>This Is The End,We're the Millers,The Heat,The World's End,Grown Up2, Don Jon, Identity Theif,The Hangover Part III,Movie 43,Dispicable Me2,Scary Movie 5,Grand Masti,The Increible Burt Wonderstane,The Interneship,Monster University'. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <h2>Drama Rama</h2>
+          <p>The Place Beyond the Pines, Mud, The Butler,The Great Gatsby,Fruitvale Station,The Spectacular Now,Blue jasmine,Pain & Gain,World War Z,Don Jon,White House Down,Before Midnight,Elysium, Man of Steel, Spring Breakers, percy Jackson: Sea Monsters,The iceman,Side Effects,Runner,Runner,12 Years Slave</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
@@ -87,7 +87,7 @@ def index(req):
       <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; The Pride of Southern Mindanao Colleges</p>
       </footer>
     </div> <!-- /container -->
 
@@ -106,7 +106,7 @@ def index(req):
            </body>
            </html>
     """
-    
+
     panelbegin = """
       <div class="panel panel-default">
       <!-- Default panel contents -->
@@ -115,10 +115,10 @@ def index(req):
       """
     tablebegin = """<table class="table table-hover table-condensed">"""
     tableend = "</table>"
-    panelend = """      
+    panelend = """
        </div>
       </div>
     """
-    
-       
+
+
     return header + bodybegin + panelbegin + tablebegin + tableend + panelend + bodyend
