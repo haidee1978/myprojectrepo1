@@ -4,5 +4,5 @@ create table cd_details (
 	genre char(20),
 	amount int not null,
 	nocopies int not null,
-	manufac_date date
+	manufac_date 
 	);
