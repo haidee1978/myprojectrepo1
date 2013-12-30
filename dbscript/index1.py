@@ -1,8 +1,25 @@
 import psycopg2
 
+def getmovieinfo():
+    constr = """
+       dbname='pythonistadb'
+       user='pythonista'
+       password='123456'
+       host='pythonista.learning.edu'
+    """
+    conn = psycopg2.connect(constr)
+    curr = conn.cursor()
+    curr.execute("select * from Cd_details")
+    rows = curr.fetchall()
+    return rows[0]
+
 def index(req):
+
     header = """
-	<meta charset="utf-8">
+	<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
